@@ -1,0 +1,6 @@
+{
+  "name": "TechLaptop Store",
+  "description": "A premium full-stack laptop e-commerce platform featuring products filtering, comparisons, active shopping cart, secure checkout simulation, interactive admin dashboard, order tracking, and clean light/dark modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
