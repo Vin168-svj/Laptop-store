@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+define('LARAVEL_START', microtime(true));
+
+// Register the Composer autoloader...
+if (file_exists($composerPath = __DIR__.'/vendor/autoload.php')) {
+    require $composerPath;
+}
+
+// Bootstrap Laravel and handle the command...
+$status = require_once __DIR__.'/bootstrap/app.php';
+
+exit($status);
