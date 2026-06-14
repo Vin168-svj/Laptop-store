@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechLaptop Store | Enterprise Workstations & Gaming Rigs</title>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return originalFetch;
+            },
+            set: function(val) {
+              originalFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          console.warn("TechLaptop: Failed patch on window.fetch wrapper", e);
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750;900&family=Space+Grotesk:wght@400;500;650;700&family=JetBrains+Mono:wght@400;550&display=swap" rel="stylesheet">
